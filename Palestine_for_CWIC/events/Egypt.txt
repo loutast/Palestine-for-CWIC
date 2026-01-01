@@ -1,0 +1,60 @@
+###########################
+# Palestine focus Events
+###########################
+
+add_namespace = Palestine
+
+country_event = {
+	id = Palestine.1 
+ #immediate = {log = "[GetDateText]: [Root.GetTag]: id = Nasser.2"}
+	title = "Focus for Economy"
+	desc = "We Broke Lmao. Time to get our money up."
+	picture = GFX_Place_Holder_focus_Image
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Not our funny up"
+
+	}
+	id = Palestine.2
+ #immediate = {log = "[GetDateText]: [Root.GetTag]: id = Nasser.2"}
+	title = "Focus for Population"
+	desc = "We Dont got peaple Lmao. Time to get our peaple back."
+	picture = GFX_Place_Holder_focus_Image
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "and get deez YAHOODIS!!! outta here"
+
+	}
+	id = Palestine.3
+ #immediate = {log = "[GetDateText]: [Root.GetTag]: id = Nasser.2"}
+	title = "Focus for Millitary"
+	desc = "Our Millitary sucks Lmao. Time to lock in."
+	picture = GFX_Place_Holder_focus_Image
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "7/2s for the win"
+
+	}
+	id = Palestine.4
+ #immediate = {log = "[GetDateText]: [Root.GetTag]: id = Nasser.2"}
+	title = "Focus for Terrorism"
+	desc = "IDFs back Lmao. Time to get our army ready."
+	picture = GFX_Place_Holder_focus_Image
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Lettuce comence forth"
+        Isr {
+			annex_state = 994 
+			annex_state = 1297
+			annex_state = 800
+			}
+	}
+}

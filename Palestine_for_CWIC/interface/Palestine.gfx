@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Place_Holder_focus_Image"
+		texturefile = "gfx/event_pictures/SOV/Place_Holder_focus_Image.dds"
+	}
+	

@@ -1,0 +1,92 @@
+﻿capital = 454
+
+oob = "ISR_1949"
+set_air_oob = ISR_1949_air
+set_popularities = { 
+	democratic = 0
+	communism = 0
+	fascism = 0
+	nationalist = 100
+	monarchism = 0
+	neutrality = 0
+	islamism = 0
+	radical_shiaism = 0
+	Social_Democratic = 0
+	Social_Liberalism = 0
+	Salafism = 0
+	Liberal_Conservatism = 0
+	conservative = 9.0 
+	Christian_Democratic = 0
+	socialist = 0 
+	centrist = 0
+	liberal = 0
+	trotskyism = 0
+	maoism = 0
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1949.7.30"
+	election_frequency = 24
+	elections_allowed = no
+}
+
+init_influence = yes
+set_variable = { var = domestic_influence_amount value = 5000 }
+add_to_array = { influence_array = FRA.id }
+add_to_array = { influence_array_val = 1000 }
+add_to_array = { influence_array = USA.id }
+add_to_array = { influence_array_val = 800 }
+add_to_array = { influence_array = SOV.id }
+add_to_array = { influence_array_val = 200 }
+
+add_ideas = {
+	idea_ISR_Defence_of_the_Zionist_Nation
+	idea_Chaim_Weizmann
+	martial_law
+	idea_ISR_economy_recession
+	Major_Power_Spy_Bonus
+}
+
+set_country_flag = weapon_purchasing_CUM_permit
+set_country_flag = weapon_purchasing_CAP_permit
+create_country_leader = {
+	name = "David Ben-Gurion"
+	desc = "BEN_GURION_DESC"
+	picture = "David_Ben_Gurion.dds"
+	ideology = labor_zionism_mapai
+	traits = {
+	Founder_of_Tshal
+	#sCharismatic_leader
+	militaristic_posture
+    Western_sympaties
+	plays_tough
+    }
+}
+
+
+create_country_leader = {
+	name = "Moshe "Dayan" Kitaigorodsky"
+	picture = "Moshe_Dayan.dds"
+	ideology = nationalist
+}
+
+recruit_character = ISR_yigael_yadin
+recruit_character = ISR_moshe_dayan
+recruit_character = ISR_avraham_yoffe
+recruit_character = ISR_yitzhak_rabin
+recruit_character = ISR_tzvi_tzur
+recruit_character = ISR_moshe_tzadok
+recruit_character = ISR_yigal_allon
+recruit_character = ISR_mordechai_motke_maklef
+recruit_character = ISR_chaim_herzog
+recruit_character = ISR_haim_laskov
+
+recruit_character = ISR_mordechai_limon
+recruit_character = ISR_shlomo_erell
+recruit_character = ISR_shlomo_shamir
+recruit_character = ISR_shmuel_tankus
+
+
+set_country_flag = yediothahronoth
+
+

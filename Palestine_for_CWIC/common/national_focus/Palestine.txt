@@ -1,0 +1,169 @@
+focus_tree = {
+	id = FPL_Palestine_1950s
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FPL
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 0
+		y = 3000
+	}
+	
+	focus = {
+		id = Palestine_is_free
+		x = 10
+		y = 1
+		cost = 1
+		icon = GFX_goal_FPL_FREE
+		search_filters = {
+			IC_FILTER
+		}
+		available = {
+			NOT = {
+				country_exists = ISR
+			}
+		}
+		completion_reward = {
+			country_event = FPL_Palestine.0
+		}
+		}
+		focus = {
+		id = Palestine_rebuilt
+		x = 0
+		y = 2
+		relative_position_id = Resettle_Palestinian_refugees
+		cost = 4
+		icon = GFX_goal_Win
+		search_filters = {
+			IC_FILTER
+		}
+		Prerequisite = { focus= Resettle_Palestinian_refugees} 
+		
+		completion_reward = {
+			# 25% stability,50% warsupport 100 PP 
+			add_stability = .25
+			add_war_support = .50
+			add_political_power = 100
+			}
+		}
+###########
+#POPULATION
+###########
+	focus = {
+		id = Matter_of_Population
+		x = 0
+		y = 1
+		relative_position_id = Palestine_is_free
+		cost = 1
+		icon = GFX_goal_POP
+		search_filters = {
+			IC_FILTER
+		}
+		prerequisite = {
+			focus = Palestine_is_free
+		}
+		completion_reward = {
+           country_event = FPL_Palestine.2
+			}
+		}
+
+focus = {
+		id = Kick_out_the_colonizers
+		x = 0
+		y = 1
+		relative_position_id = Matter_of_Population
+		cost = 15
+		icon = GFX_goal_Kick_zios
+		search_filters = {
+			IC_FILTER
+		}
+		prerequisite = {
+			focus = Matter_of_Population
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_stability = .05
+			#decreese population in non egypt/jordan controlled states
+			921 = {
+				add_manpower = -100000#100,000	
+			}
+			1297 = {
+				add_manpower = -100000 #100,000
+			}
+			800 = {
+				add_manpower = -100000 #100,000
+			}
+			454 = {
+				add_manpower = -350000 #350000 
+			}
+			803 = {
+				add_manpower = -120000 #120,000
+			}
+			1296 = {
+				add_manpower = -700 #700
+			}
+			755 = {
+				add_manpower = -5000 #5,000 
+			}
+			hidden_effect = {
+			994 {
+			 add_manpower = 120000 #120000
+			}
+		}
+		}
+}
+focus = {
+		id = Resettle_Palestinian_refugees
+		x = 0
+		y = 1
+		relative_position_id = Kick_out_the_colonizers
+		cost = 15
+		icon = GFX_goal_Return_FPL
+		search_filters = {
+			IC_FILTER
+		}
+		prerequisite = {
+			focus = Kick_out_the_colonizers
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_stability = .05
+			#Increases population in non all controlled states
+			921 = {
+				add_manpower = 100000 #100,000	
+			}
+			1297 = {
+				add_manpower = 100000 #100,000
+			}
+			800 = {
+				add_manpower = 100000 #100,000
+			}
+			454 = {
+				add_manpower = 350000 #350000 
+			}
+			803 = {
+				add_manpower = 120000 #120,000
+			}
+			1296 = {
+				add_manpower = 700 #700
+			}
+			755 = {
+				add_manpower = 5000 #5,000 
+			}
+			1303 {
+			     add_manpower = 100000 #100,000
+			}
+			781 {
+			     add_manpower = 100000 #100,000
+			}
+			801 {
+				add_manpower = 250000 #250000
+			}
+			}
+		}		
+    }
+

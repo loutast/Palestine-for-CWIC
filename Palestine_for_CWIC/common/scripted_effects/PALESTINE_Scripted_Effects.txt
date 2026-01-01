@@ -1,0 +1,11 @@
+Zios_back = {
+ISR = {
+		transfer_state = 994
+		set_politics = {
+		ruling_party = Nuetrality
+		last_election = "1945.1.1"
+		election_frequency = 48
+		elections_allowed = no
+		}
+	}
+}

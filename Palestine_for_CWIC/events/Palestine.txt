@@ -1,0 +1,74 @@
+###########################
+# FPL_Palestine focus Events
+###########################
+add_namespace = FPL_Palestine
+
+country_event = {
+	id = FPL_Palestine.0
+	immediate = {log = "[GetDateText]: [Root.GetTag]: id = FPL_Palestine.0"}
+	title = FPL_Palestine.0.t
+	desc = FPL_Palestine.0.d
+	picture = GFX_FPL.dds
+	trigger = {
+	tag = FPL
+	ISR = { exists = no }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	is_triggered_only = yes
+	option = {
+		name = "Best get to work"
+		add_political_power = 250
+			1297 = {
+				set_state_name = "El-Nasir"
+			}
+			800 = {
+				set_state_name = "Umm Khalid"
+			}
+			454 = {
+				set_state_name = "Yaffa"
+			}
+			set_province_name = {
+				id = 4206
+				name = "Yaffa"
+			}
+			921 = {
+				set_state_name = "Al-Quds"
+			}
+			set_province_name = {
+				id = 13224
+				name = "Al-Quds"
+				}
+			803 = {
+				set_state_name = "Beer Al-Sabe"
+			}
+			1296 = {
+				set_state_name = "An-Naqab"
+			}
+			755 = {
+				set_state_name = "Umm Al-Rashrash"
+			}
+			set_province_name = {
+				id = 1015
+				name = "Umm Al-Rashrash"
+			}
+			first_mafia_war_super_event = yes
+	}
+}
+
+country_event = {
+	id = FPL_Palestine.2
+		immediate = {log = "[GetDateText]: [Root.GetTag]: id = FPL_Palestine.2"}
+	title = FPL_Palestine.2.t
+	desc = FPL_Palestine.2.d
+	picture = GFX_FPL.dds
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Lets hope this dosen't lead to a crisis"
+
+	}
+}
+
